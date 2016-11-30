@@ -16,7 +16,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     RequestModel request;
     try
     {
-        request = await req.ReadAsStringAsync();   
+        request = await req.Content.ReadAsStringAsync();   
         log.Info(request.matchId); 
     }
     catch (System.Exception)
