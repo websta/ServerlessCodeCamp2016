@@ -24,7 +24,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
         throw;
     }
     
-    return req.CreateResponse(HttpStatusCode.OK, new TankCommand() {
+    return req.CreateResponse(HttpStatusCode.OK, new ResponseModel() {
         command = "turn-left"
     });
 }
