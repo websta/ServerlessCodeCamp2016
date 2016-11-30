@@ -6,8 +6,8 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 {
     log.Info("tank info function");
 
-    return req.CreateResponse(HttpStatusCode.OK, new TankInfo {
-        owner: "Gerald",
-        name: "Gerald's Tank"
+    return req.CreateResponse(HttpStatusCode.OK, new TankInfo() {
+        owner = "Gerald",
+        name = "Gerald's Tank"
     });
 }
