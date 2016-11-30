@@ -5,6 +5,6 @@ public class Tank {
     public int y {get;set;}
     public int strength {get;set;}
     public int ammo {get;set;}
-    public string? status {get;set;}
-    public int? targetRange {get;set;}
+    // public string? status {get;set;}
+    // public int? targetRange {get;set;}
 }
